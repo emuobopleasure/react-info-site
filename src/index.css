@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: #21222A;
+  color: #FFFFFF;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Inter, sans-serif;
+}
+
+
+.appDark {
+  background-color: #282D35;
+  height: 100vh;
+  border: 10px ridge grey;
+  border-radius: 10px;
+}
+
+.appLight {
+  background-color: #ffffff;
+  height: 100vh;
+  border: 10px ridge grey;
+  border-radius: 10px;
+  color: #282D35;
+  
+}
+/* Header component styling============================ */
+
+.navLight {
+  background: #ffffff;
+  color: #21222A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 0 20px 0 gray;
+
+}
+
+.navDark{
+  background: #21222A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+}
+
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+h4 {
+  color: #61DAFB;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h5 {
+  color: #DEEBF8;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* MainContent styling goes here=====> */
+
+main {
+  margin-top: 60px;
+  height: 70%;
+  padding: 0 25px;
+  position: relative;
+  background-image: url("/public/images/Group.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 30%;
+
+}
+
+h1 {
+  font-size: 39px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li{
+  padding: 10px 0;
+  font-size: 14px;
+  width: 350px;
+}
+
+.dot {
+  background-color: #61DAFB;
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.darkMode {
+  display: flex;
+}
+
+.lightMode {
+  display: none;
+}
+
+button {
+  display: flex;
 }
